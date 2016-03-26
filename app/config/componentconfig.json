@@ -1,0 +1,22 @@
+[
+{"card":[
+    {"page":["custom-card1","custom-card1"]},
+    {"element":[{"inputtype":"texticon","label":"","errorlabel":"","FnName":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","FnName":"","alignflag":"2","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2","class":"mandatory"},    
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2"},    
+    {"inputtype":"button","label":"","FnName":"","alignflag":"0","buttonvalue":""}    
+    ]}
+]}
+]
+
+
+
