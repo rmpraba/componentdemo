@@ -1,0 +1,34 @@
+[
+{"card":[
+    {"page":["custom-card1","custom-card1"]},
+    {"element":[{"inputtype":"texticon","label":"","errorlabel":"","FnName":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","FnName":"","alignflag":"2","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2","class":"mandatory"},    
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2"},    
+    {"inputtype":"button","label":"Submit","FnName":"Submit","alignflag":"0","buttonvalue":""}    
+    ]}
+]},
+{"card":[
+    {"page":["custom-card2","custom-card2"]},
+    {"element":[
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2","class":"mandatory"},    
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"1","class":"mandatory"},
+    {"inputtype":"text","label":"","errorlabel":"","alignflag":"2"},    
+    {"inputtype":"button","label":"Submit","FnName":"Submit","alignflag":"0","buttonvalue":""}    
+    ]}
+]}
+]
+
+
+

@@ -1,0 +1,11 @@
+[{
+	"pagecode": [
+      {
+        "pagename": "custom-card1",
+        "serviceurl":""
+      },
+      {
+        "pagename": "custom-card2",
+        "serviceurl":""
+      }]
+}]

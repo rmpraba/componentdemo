@@ -1,0 +1,66 @@
+<link rel="import" href="..\..\bower_components/polymer/polymer.html">
+<link rel="import" href="../component-service/component-service.html">
+<link rel="import" href="..\..\bower_components/paper-input/paper-input.html">
+<link rel="import" href="..\..\bower_components/paper-button/paper-button.html">
+<link rel="import" href="..\..\bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="..\..\bower_components/paper-item/paper-item.html">
+
+<dom-module id="component-card">
+
+ <style>
+   :host {
+        display: block;
+      }
+      #card{
+        @apply(--layout-vertical);
+      }
+      #innerdiv{
+        @apply(--layout-horizontal);
+      }
+      .mandatory{
+        --paper-input-container-label: { color: red };
+      }
+</style>
+
+  <template>
+  <paper-button  id="custom-card1" on-click="click">Page1</paper-button>
+  <paper-button  id="custom-card2" on-click="click">Page2</paper-button>
+  <component-service id="service"></component-service>
+
+  </template>
+  <script type="text/javascript" src="../../scripts/component.js"></script>
+  <script>
+  (function() {
+    var card;
+   'use strict';
+    Polymer({
+      is: 'component-card',
+     ready:function(){
+      
+      
+     },
+    createComponent:function(componentarr,componentname){       
+      var XComponent = document.registerElement(componentname);
+      card = new XComponent();
+      this.appendChild(card);
+      FnCreateElement(componentarr,componentname,card);    
+      /*var div = document.createElement('div');
+      div.textContent = 'This is Custom Element';
+      Polymer.dom(card).appendChild(div);*/
+    },
+    setElement:function(element){
+      //this.appendChild(element);
+      //alert('coming....'+element);
+      Polymer.dom(card).appendChild(element); 
+      //Polymer.dom(this.root).appendChild(card); 
+    },
+    click:function(e){
+      //alert(e.target.id);
+      this.removeChild(this.lastChild);
+      this.$.service.setPage(e.target.id);
+    }
+    });
+  })();
+  </script>
+  
+</dom-module>

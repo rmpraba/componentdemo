@@ -1,0 +1,55 @@
+
+
+<link rel="import" href="..\..\bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
+
+<dom-module id="component-service">
+  <template>
+  <iron-ajax
+      id="pagereadAjax"
+      url="{{pageurl}}"
+      params="{{pageparams}}"
+      handle-as="json"
+      content-type="application/json"
+      on-response="FnPagereadResponse">
+  </iron-ajax>
+  </template>
+
+  <script>
+  (function() {
+    var currpagename;
+   'use strict';
+    Polymer({
+      is: 'component-service',
+      properties: {
+      },
+     setPage:function(currpage){
+      currpagename=currpage;
+      this.callCreateComponentService();
+     },
+      callCreateComponentService:function(){
+       this.pageurl="../../config/componentconfig.json";
+       this.$.pagereadAjax.generateRequest();
+      },
+      FnPagereadResponse:function(e){
+        var arr=e.detail.response;
+        //alert(JSON.stringify(e.detail.response));
+        for(var i=0;i<arr.length;i++){
+          //alert(JSON.stringify(arr[i].card[1]));
+          if(arr[i].card[0].page[0]==currpagename){
+            //alert('eq');
+          document.querySelector('component-card').createComponent(arr[i].card[1],arr[i].card[0].page[0]);
+         }
+         // alert(arr[i].card[0].page[0]);
+        }
+
+      } ,
+
+	  FnSetInputInfo:function(itemarr){
+	       alert(JSON.stringify(itemarr));
+      }
+    });
+  })();
+  </script>
+
+</dom-module>
